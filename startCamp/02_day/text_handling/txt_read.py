@@ -32,5 +32,3 @@ with open('with_ssafy.txt', 'r') as f:
     # print() 자체에 \n 존재
     for line in with_text_lines:
         print(line.strip())
-
-

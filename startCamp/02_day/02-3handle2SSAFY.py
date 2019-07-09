@@ -20,6 +20,7 @@ print(filenames)
 """
 3. for문을 돌면서 변경한다.
 """
+
 #.txt로 끝나는 파일의 이름만 변경
 for filename in filenames:
     # 확장자가 .txt인 파일만 이름을 바꾼다.
