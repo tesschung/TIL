@@ -180,16 +180,16 @@ Link([naver]( 해당주소))
 |      |                      | `upper()/lower()`                                  |                                                              | quote.upper()                                   |
 |      |                      | `replace(바꿀문자, 새문자)`                        |                                                              | filename.replace('SAMSUNG_', 'SSAFY_')          |
 |      |                      | `count(target문자)`                                |                                                              |                                                 |
-|      |                      | `strip()`                                          |                                                              |                                                 |
-|      |                      | lstrip()                                           |                                                              |                                                 |
-|      |                      | rstrip()                                           |                                                              |                                                 |
+|      |                      | `strip()`                                          |                                                              | .strip()                                        |
+|      |                      | `lstrip()`                                         |                                                              |                                                 |
+|      |                      | `rstrip()`                                         |                                                              |                                                 |
 |      |                      | `split(기준문자)`                                  |                                                              |                                                 |
 |      |                      | `join`                                             |                                                              | ",".join(score_list)                            |
-|      | 리스트 함수          | **append(값) **                                    | 요소 추가하기                                                | **empty_list.append(1)**                        |
-|      |                      | extend(리스트)                                     |                                                              | **empty_list.extend([1,2])**                    |
+|      | 리스트 함수          | `append(값) `                                      | 요소 추가하기                                                | **empty_list.append(1)**                        |
+|      |                      | `extend(리스트)`                                   |                                                              | **empty_list.extend([1,2])**                    |
 |      |                      | `insert(인덱스, 값)`                               | 특정 인덱스에 요소추가                                       | empty_list.insert(0, 100)                       |
 |      |                      | `index(값)`                                        | 특정값의 인덱스 구하기                                       | a.index(3)                                      |
-|      |                      | **특정값의 개수구하기 count(값)**                  |                                                              | a.count(2)                                      |
+|      |                      | ` count(값)`                                       | 특정값의 개수구하기                                          | a.count(2)                                      |
 |      |                      | **순서 뒤집기 reverse()**                          |                                                              | a.reverse()                                     |
 |      |                      | **리스트 요소삭제 pop(인덱스)**                    |                                                              | num = empty_list.pop(0)                         |
 |      |                      | **리스트 특정값을 찾아 삭제 remove(값)**           |                                                              | empty_list.remove(2)                            |

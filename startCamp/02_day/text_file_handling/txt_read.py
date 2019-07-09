@@ -21,4 +21,16 @@ with open('with_ssafy.txt', 'r') as f:
     with_all_text = f.read()
     print(with_all_text)
 
-    
+
+# 전체를 읽고, list로 불러온다.
+with open('with_ssafy.txt', 'r') as f:
+    with_text_lines = f.readlines()
+    print(with_text_lines)
+
+    # print by lines
+    # .strip()으로 \n 제거
+    # print() 자체에 \n 존재
+    for line in with_text_lines:
+        print(line.strip())
+
+
