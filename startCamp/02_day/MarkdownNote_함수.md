@@ -25,19 +25,21 @@
 
 ## git bash 사용법
 
-| name                   | meaning                            | description                   |      | method           | example       |
-| ---------------------- | ---------------------------------- | ----------------------------- | ---- | ---------------- | ------------- |
-| ls                     | list                               | 현재 디렉토리 내용들을 나열   |      |                  |               |
-| cd                     | change directory                   | 현재 작업하는 디렉토리로 변경 |      | cd 폴더명        | cd Documents/ |
-| code .                 | start vscode                       |                               |      |                  |               |
-| mkdir                  | make directory                     | 새로운 디렉토리 생성          |      |                  |               |
-| echo                   |                                    | 문자열 출력                   |      | echo 문자열 출력 |               |
-| rm                     | remove                             | 파일 지우기                   |      |                  |               |
-| exit                   |                                    | 터미널 종료                   |      |                  |               |
-| control+l              | reset                              |                               |      |                  |               |
-| rm -r 폴더명/          |                                    |                               |      |                  |               |
-| touch 원하는 폴더명.py | make a project in python           | 파이썬파일생성                |      |                  |               |
-| python -V              | check the version of such language |                               |      |                  |               |
+| name                   | meaning                            | description                   |      | method           | example                              |
+| ---------------------- | ---------------------------------- | ----------------------------- | ---- | ---------------- | ------------------------------------ |
+| ls                     | list                               | 현재 디렉토리 내용들을 나열   |      |                  |                                      |
+| cd                     | change directory                   | 현재 작업하는 디렉토리로 변경 |      | cd 폴더명        | cd Documents/                        |
+| code .                 | start vscode                       |                               |      |                  |                                      |
+| mkdir                  | make directory                     | 새로운 디렉토리 생성          |      |                  |                                      |
+| echo                   |                                    | 문자열 출력                   |      | echo 문자열 출력 |                                      |
+| rm                     | remove                             | 파일 지우기                   |      |                  |                                      |
+| exit                   |                                    | 터미널 종료                   |      |                  |                                      |
+| control+l              | reset                              |                               |      |                  |                                      |
+| rm -r 폴더명/          |                                    |                               |      |                  |                                      |
+| touch 원하는 폴더명.py | make a project in python           | 파이썬파일생성                |      |                  |                                      |
+| python -V              | check the version of such language |                               |      |                  |                                      |
+| echo "string"          |                                    |                               |      |                  | $ echo "hello world"<br/>hello world |
+| history                |                                    | 사용한 모든 명령어 확인       |      |                  |                                      |
 
 ## vscode project 생성 에디터 사용법
 
@@ -176,17 +178,17 @@ Link([naver]( 해당주소))
 |      | 문자열 함수          | `len(값)`                                          |                                                              | quote = "my best careet partner"<br/>len(quote) |
 |      |                      | `index(찾을 문자)`                                 |                                                              |                                                 |
 |      |                      | `upper()/lower()`                                  |                                                              | quote.upper()                                   |
-|      |                      | `replace(바꿀문자, 새문자)`                        |                                                              |                                                 |
+|      |                      | `replace(바꿀문자, 새문자)`                        |                                                              | filename.replace('SAMSUNG_', 'SSAFY_')          |
 |      |                      | `count(target문자)`                                |                                                              |                                                 |
 |      |                      | `strip()`                                          |                                                              |                                                 |
 |      |                      | lstrip()                                           |                                                              |                                                 |
 |      |                      | rstrip()                                           |                                                              |                                                 |
 |      |                      | `split(기준문자)`                                  |                                                              |                                                 |
 |      |                      | `join`                                             |                                                              | ",".join(score_list)                            |
-|      | 리스트 함수          | **요소 추가하기 append(값), extend(리스트)**       |                                                              | **empty_list.append(1)**                        |
-|      |                      |                                                    |                                                              | **empty_list.extend([1,2])**                    |
-|      |                      | **특정 인덱스에 요소추가  insert(인덱스, 값)**     |                                                              | empty_list.insert(0, 100)                       |
-|      |                      | **특정값의 인덱스 구하기 index(값)**               |                                                              | a.index(3)                                      |
+|      | 리스트 함수          | **append(값) **                                    | 요소 추가하기                                                | **empty_list.append(1)**                        |
+|      |                      | extend(리스트)                                     |                                                              | **empty_list.extend([1,2])**                    |
+|      |                      | `insert(인덱스, 값)`                               | 특정 인덱스에 요소추가                                       | empty_list.insert(0, 100)                       |
+|      |                      | `index(값)`                                        | 특정값의 인덱스 구하기                                       | a.index(3)                                      |
 |      |                      | **특정값의 개수구하기 count(값)**                  |                                                              | a.count(2)                                      |
 |      |                      | **순서 뒤집기 reverse()**                          |                                                              | a.reverse()                                     |
 |      |                      | **리스트 요소삭제 pop(인덱스)**                    |                                                              | num = empty_list.pop(0)                         |
@@ -229,9 +231,16 @@ Link([naver]( 해당주소))
 
 ## 함수/모듈 정리
 
-|      | 함수/모듈명 | 함수/모듈2명         | description                                                  | example |
-| ---- | ----------- | -------------------- | ------------------------------------------------------------ | ------- |
-|      | `random`    | `random`             |                                                              |         |
-|      |             | `random.choice(seq)` | Return a random element from the non-empty sequence seq. If seq is empty, raises IndexError. |         |
-|      |             |                      |                                                              |         |
+|      | 모듈명   | 함수/모듈2명                                 | description                                                  | example                                                      |
+| ---- | -------- | -------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+|      | `random` | `random`                                     |                                                              |                                                              |
+|      |          | `random.choice(seq)`                         | Return a random element from the non-empty sequence seq. If seq is empty, raises IndexError. |                                                              |
+|      | `os`     | `os`                                         | os가 할 수 있는 기능을 가져와서 python에서 실행              |                                                              |
+|      |          | `os.system(str)`                             |                                                              | cmd = 'echo "Hello World"'                                   |
+|      |          | `os.chdir(r'path')`                          | change file directory                                        | os.chdir(r'C:\Users\student\TIL\startCamp\02_day\file_handling') |
+|      |          |                                              |                                                              |                                                              |
+|      |          | `os.listdir(path)`                           | 특정 경로의 모든 파일의 이름을 가지고옴                      |                                                              |
+|      |          | `os.path.splitext(filename)`                 | 확장자만 따로 분리                                           |                                                              |
+|      |          | `os.rename(filename, f'SAMSUNG_{filename}')` | rename a file or a directory                                 | # 첫번째 인자로 넘어간 이름을, 두번째 인자로 넘어간 이름으로 바꾼다. |
+|      |          |                                              |                                                              |                                                              |
 

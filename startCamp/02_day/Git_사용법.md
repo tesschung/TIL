@@ -110,6 +110,15 @@ $ git clone __경로__
 
 ![1562649660587](C:\Users\student\AppData\Roaming\Typora\typora-user-images\1562649660587.png)
 
+## 재등록
+
+```bash
+$ git add .
+$ git commit -m "190709"
+$ git status
+$ git push origin master
+```
+
 
 
 ## [github](https://github.com/) 사용법 (Draft)
