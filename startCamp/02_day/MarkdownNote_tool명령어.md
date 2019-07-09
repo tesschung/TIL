@@ -21,7 +21,7 @@
 
 
 
-## git bash	협업툴
+## git bash 사용법
 
 | name                   | meaning                            | description                   |      | method           | example       |
 | ---------------------- | ---------------------------------- | ----------------------------- | ---- | ---------------- | ------------- |
@@ -37,7 +37,7 @@
 | touch 원하는 폴더명.py | make a project in python           | 파이썬파일생성                |      |                  |               |
 | python -V              | check the version of such language |                               |      |                  |               |
 
-## vscode	project 생성 에디터	
+## vscode project 생성 에디터 사용법
 
 | name                                             | meaning  | description |      | method | example |
 | ------------------------------------------------ | -------- | ----------- | ---- | ------ | ------- |
@@ -144,9 +144,11 @@ Link([naver]( 해당주소))
 
 
 
-## [github](https://github.com/)
+## [github](https://github.com/) 사용법
 
 [tesschung](https://github.com/tesschung)
+
+[TIL](https://github.com/tesschung/TIL.git)
 
 git 이란?
 
@@ -189,7 +191,7 @@ git config --system --unset credential.helper
 
 
 
-등록방법
+* 등록방법
 
 ```bash
 $ git config --global user.name "tesschung"
@@ -205,7 +207,148 @@ user.email=geobera0910@naver.com
 
 ![1562639469992](C:\Users\student\AppData\Roaming\Typora\typora-user-images\1562639469992.png)
 
+git init으로 master 설정
+
+잘못 master생성시 **$ rm -rf .git/**
 
 
 
+git에 등록하기
+
+```bash
+$ git add 01_day/
+```
+
+![1562643928270](C:\Users\student\AppData\Roaming\Typora\typora-user-images\1562643928270.png)
+
+commit이 되어있지 않은 파일
+
+![1562643993040](C:\Users\student\AppData\Roaming\Typora\typora-user-images\1562643993040.png)
+
+commit 준비완료
+
+![1562644051764](C:\Users\student\AppData\Roaming\Typora\typora-user-images\1562644051764.png)
+
+commit 완료
+
+![1562644069696](C:\Users\student\AppData\Roaming\Typora\typora-user-images\1562644069696.png)
+
+01_day commit완료하여 더이상 나타나지 않음
+
+![1562644146585](C:\Users\student\AppData\Roaming\Typora\typora-user-images\1562644146585.png)
+
+git log 사용하여 commit 확인 가능
+
+![1562645388022](C:\Users\student\AppData\Roaming\Typora\typora-user-images\1562645388022.png)
+
+원격저장소 관리
+
+![1562645449960](C:\Users\student\AppData\Roaming\Typora\typora-user-images\1562645449960.png)
+
+원격저장소 저장 완료
+
+![1562645808511](C:\Users\student\AppData\Roaming\Typora\typora-user-images\1562645808511.png)
+
+commit내용을 origin에 push
+
+등록완료
+
+
+
+* re등록 (새로운 device에서 작업하고 싶을 경우, local에 commited update내용 적용)
+
+![1562646899204](C:\Users\student\AppData\Roaming\Typora\typora-user-images\1562646899204.png)
+
+git pull origin master
+
+
+
+## 기본함수 정리
+
+|      | 함수/모듈명          | 함수/모듈2명                                       | description                                                  | example                                         |
+| ---- | -------------------- | -------------------------------------------------- | ------------------------------------------------------------ | ----------------------------------------------- |
+|      | 연산자               | +                                                  |                                                              |                                                 |
+|      |                      | -                                                  |                                                              |                                                 |
+|      |                      | *                                                  |                                                              |                                                 |
+|      |                      | /                                                  |                                                              |                                                 |
+|      |                      | **                                                 | 거듭제곱                                                     |                                                 |
+|      |                      | %                                                  | 모듈러, 나머지를 구한다. a =10 b = 3 인 경우 a%b는 1         |                                                 |
+|      | 논리                 | x and y                                            | True if both the operands are true                           |                                                 |
+|      |                      | x or y                                             | True if either of the operands is true                       |                                                 |
+|      |                      | not x                                              | True if operand is false (complements the operand)           |                                                 |
+|      |                      | x > y                                              | Greater that - True if left operand is greater than the right |                                                 |
+|      |                      | x < y                                              | Less that - True if left operand is less than the right      |                                                 |
+|      |                      | x == y                                             | Equal to - True if both operands are equal                   |                                                 |
+|      |                      | x != y                                             | **Not equal to** - True if operands are not equal            |                                                 |
+|      |                      | x >= y                                             | Greater than or equal to - True if left operand is greater than or equal to the right |                                                 |
+|      |                      | x <= y                                             | Less than or equal to - True if left operand is less than or equal to the right |                                                 |
+|      | 자료형               | `int`                                              | 정수                                                         |                                                 |
+|      |                      | `float`                                            | 실수                                                         |                                                 |
+|      |                      | `bool`                                             | True/False                                                   |                                                 |
+|      |                      | `str`                                              | string                                                       |                                                 |
+|      |                      | `list`                                             | list                                                         |                                                 |
+|      |                      | `tuple`                                            | tuple                                                        |                                                 |
+|      |                      | `set`                                              | set                                                          |                                                 |
+|      |                      | `dict`                                             | dictionary                                                   |                                                 |
+|      | 문자열 함수          | `len(값)`                                          |                                                              | quote = "my best careet partner"<br/>len(quote) |
+|      |                      | `index(찾을 문자)`                                 |                                                              |                                                 |
+|      |                      | `upper()/lower()`                                  |                                                              | quote.upper()                                   |
+|      |                      | `replace(바꿀문자, 새문자)`                        |                                                              |                                                 |
+|      |                      | `count(target문자)`                                |                                                              |                                                 |
+|      |                      | `strip()`                                          |                                                              |                                                 |
+|      |                      | lstrip()                                           |                                                              |                                                 |
+|      |                      | rstrip()                                           |                                                              |                                                 |
+|      |                      | `split(기준문자)`                                  |                                                              |                                                 |
+|      |                      | `join`                                             |                                                              | ",".join(score_list)                            |
+|      | 리스트 함수          | **요소 추가하기 append(값), extend(리스트)**       |                                                              | **empty_list.append(1)**                        |
+|      |                      |                                                    |                                                              | **empty_list.extend([1,2])**                    |
+|      |                      | **특정 인덱스에 요소추가  insert(인덱스, 값)**     |                                                              | empty_list.insert(0, 100)                       |
+|      |                      | **특정값의 인덱스 구하기 index(값)**               |                                                              | a.index(3)                                      |
+|      |                      | **특정값의 개수구하기 count(값)**                  |                                                              | a.count(2)                                      |
+|      |                      | **순서 뒤집기 reverse()**                          |                                                              | a.reverse()                                     |
+|      |                      | **리스트 요소삭제 pop(인덱스)**                    |                                                              | num = empty_list.pop(0)                         |
+|      |                      | **리스트 특정값을 찾아 삭제 remove(값)**           |                                                              | empty_list.remove(2)                            |
+|      |                      | **정렬하기(오름차순) sort(), sort(reverse=False)** |                                                              | a.sort()                                        |
+|      |                      | **정렬하기(내림차순) sort(reverse=True)**          |                                                              | a.sort(reverse=True)                            |
+|      | 딕셔너리 기능        | **키-값 쌍 추가하기 setdefault(키, 값)**           |                                                              |                                                 |
+|      |                      | **키-값 수정하기 update({키:값})**                 |                                                              |                                                 |
+|      |                      | **모든 값 삭제 clear()**                           |                                                              |                                                 |
+|      |                      | **키로 딕셔너리 항목삭제 pop(키,기본값)**          |                                                              |                                                 |
+|      | 딕셔너리 할당과 복사 | **딕셔너리 복사 copy()**                           |                                                              |                                                 |
+|      |                      | **중첩 딕셔너리의 경우 deepcopy()**                |                                                              |                                                 |
+|      |                      |                                                    |                                                              |                                                 |
+|      |                      |                                                    |                                                              |                                                 |
+|      |                      |                                                    |                                                              |                                                 |
+|      |                      |                                                    |                                                              |                                                 |
+|      |                      |                                                    |                                                              |                                                 |
+|      |                      |                                                    |                                                              |                                                 |
+|      |                      |                                                    |                                                              |                                                 |
+|      |                      |                                                    |                                                              |                                                 |
+|      |                      |                                                    |                                                              |                                                 |
+|      |                      |                                                    |                                                              |                                                 |
+|      |                      |                                                    |                                                              |                                                 |
+|      |                      |                                                    |                                                              |                                                 |
+|      |                      |                                                    |                                                              |                                                 |
+|      |                      |                                                    |                                                              |                                                 |
+|      |                      |                                                    |                                                              |                                                 |
+|      |                      |                                                    |                                                              |                                                 |
+|      |                      |                                                    |                                                              |                                                 |
+|      |                      |                                                    |                                                              |                                                 |
+|      |                      |                                                    |                                                              |                                                 |
+|      |                      |                                                    |                                                              |                                                 |
+|      |                      |                                                    |                                                              |                                                 |
+|      |                      |                                                    |                                                              |                                                 |
+|      |                      |                                                    |                                                              |                                                 |
+|      |                      |                                                    |                                                              |                                                 |
+|      |                      |                                                    |                                                              |                                                 |
+
+
+
+## 함수/모듈 정리
+
+|      | 함수/모듈명 | 함수/모듈2명         | description                                                  | example |
+| ---- | ----------- | -------------------- | ------------------------------------------------------------ | ------- |
+|      | `random`    | `random`             |                                                              |         |
+|      |             | `random.choice(seq)` | Return a random element from the non-empty sequence seq. If seq is empty, raises IndexError. |         |
+|      |             |                      |                                                              |         |
 
