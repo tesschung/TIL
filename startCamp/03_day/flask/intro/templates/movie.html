@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Movie</title>
+</head>
+<body>
+    <h1>영화목록</h1>
+    <ul>
+    {% for movie in html_movies %}
+        <li>{{ movie }}</li>
+    {% endfor %}
+    </ul>
+    <h3 style='color:blue'>
+        랜덤으로 선택합니다. 
+    </h3>
+    <h4 style='color:red; font-size: 50px'>
+        ---{{html_movie}}---
+    </h4>
+
+</body>
+</html>
