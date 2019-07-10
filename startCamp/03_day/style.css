@@ -1,0 +1,23 @@
+/* <!-- style 정의 (기준 방법)--> */
+
+/* 요소 선택자 (type) */
+h1 {
+    color: blue;
+}
+h2 {
+    color: rebeccapurple;
+}
+
+/* 아이디 선택자 (id) */
+#description {
+    background-color: aqua;
+} 
+
+/* 클래스 선택자 (class) */
+li.list-item {
+    font-size: 20px;
+}
+
+ul li {
+    background: blueviolet;
+}

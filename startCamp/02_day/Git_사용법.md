@@ -121,6 +121,23 @@ $ git push origin master
 
 
 
+## 추가 명령어
+
+```bash
+$ touch .gitignore
+
+# beam editor
+$ vi .gitignore
+i : 끼워넣기 실행
+파일명/ 입력시 git으로 더이상 관리하지 않음
+**.txt 
+esc: 일반모드
+: :명령어 입력
+wq w저장 q나가기 저장하고 나가기
+```
+
+
+
 ## [github](https://github.com/) 사용법 (Draft)
 
 [tesschung](https://github.com/tesschung)

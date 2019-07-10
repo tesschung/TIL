@@ -1,11 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-
 url = 'http://www.naver.com'
-
-
-
 response = requests.get(url).text
 #print(response)
 
