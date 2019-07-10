@@ -136,6 +136,8 @@ esc: 일반모드
 wq w저장 q나가기 저장하고 나가기
 ```
 
+[gitignore](https://gitignore.io/) : 환경에 맞춰 필요한 것  .gitignore할 수 있도록 목록 생성
+
 
 
 ## [github](https://github.com/) 사용법 (Draft)
