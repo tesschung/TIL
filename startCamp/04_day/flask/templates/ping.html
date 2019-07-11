@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ping</title>
+</head>
+<body>
+    <!-- action 은 form을 (요청을)보내는 url을 정의하는 곳 -->
+    <!-- 작성 다 하고 /pong 으로 보낼 것 -->
+    <!-- <form action="https://www.google.com/search"> 
+    으로 작성시 google에 보내게 되는것,
+    앞에 설정 없으면 자동으로 local host/pong-->
+    <form action="/pong">
+        <!-- input은 사용자들이 정보를 입력하는 곳  -->
+        <input type="text" name="age">
+        <!-- 반드시 type 지정 -->
+        <button type="submit">제출하기</button>
+    </form> 
+    
+</body>
+</html>

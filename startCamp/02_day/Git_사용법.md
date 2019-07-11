@@ -63,7 +63,7 @@ $ git status
 1. 원격 저장소 (remote repository) 등록하기
 
    ```bash
-   $ git remote add orgin __경로__
+   $ git remote add origin __경로__
    ```
 
    원격 저장소(remote)를 등록(add)한다. *origin* 이라는 이름으로!
