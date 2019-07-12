@@ -221,6 +221,12 @@ http://artii.herokuapp.com/make
 
 2. 실제 당첨 번호와 비교하여 실제 사용자에게 전달 페이지
 
+865
+
+3 15 22 32 33 45
+
+
+
 
 
 https://dhlottery.co.kr/common.do?method=main
@@ -240,6 +246,4 @@ network -> all
 json
 
 
-
-## 챗봇
 
