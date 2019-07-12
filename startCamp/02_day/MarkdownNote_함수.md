@@ -151,83 +151,84 @@ Link([naver]( 해당주소))
 
 ## 기본함수 정리
 
-|      | 함수/모듈명          | 함수/모듈2명                                        | description                                                  | example                                         |
-| ---- | -------------------- | --------------------------------------------------- | ------------------------------------------------------------ | ----------------------------------------------- |
-|      | 연산자               | +                                                   | 더하기                                                       |                                                 |
-|      |                      | -                                                   | 빼기                                                         |                                                 |
-|      |                      | *                                                   | 곱하기                                                       |                                                 |
-|      |                      | **2                                                 | 제곱                                                         |                                                 |
-|      |                      | /                                                   | 나눗셈                                                       |                                                 |
-|      |                      | **                                                  | 거듭제곱                                                     |                                                 |
-|      |                      | %                                                   | 모듈러, 나머지를 구한다. a =10 b = 3 인 경우 a%b는 1         |                                                 |
-|      | 논리                 | x and y                                             | True if both the operands are true                           |                                                 |
-|      |                      | x or y                                              | True if either of the operands is true                       |                                                 |
-|      |                      | not x                                               | True if operand is false (complements the operand)           |                                                 |
-|      |                      | x > y                                               | Greater that - True if left operand is greater than the right |                                                 |
-|      |                      | x < y                                               | Less that - True if left operand is less than the right      |                                                 |
-|      |                      | x == y                                              | Equal to - True if both operands are equal                   |                                                 |
-|      |                      | x != y                                              | **Not equal to** - True if operands are not equal            |                                                 |
-|      |                      | x >= y                                              | Greater than or equal to - True if left operand is greater than or equal to the right |                                                 |
-|      |                      | x <= y                                              | Less than or equal to - True if left operand is less than or equal to the right |                                                 |
-|      | 자료형               | `int`                                               | 정수                                                         |                                                 |
-|      |                      | `float`                                             | 실수                                                         |                                                 |
-|      |                      | `bool`                                              | True/False                                                   |                                                 |
-|      |                      | `str`                                               | string                                                       |                                                 |
-|      |                      | `list`                                              | list                                                         |                                                 |
-|      |                      | `tuple`                                             | tuple                                                        |                                                 |
-|      |                      | `set`                                               | set                                                          |                                                 |
-|      |                      | `dict`                                              | dictionary                                                   |                                                 |
-|      | 문자열 함수          | `len(값)`                                           |                                                              | quote = "my best careet partner"<br/>len(quote) |
-|      |                      | `index(찾을 문자)`                                  |                                                              |                                                 |
-|      |                      | `upper()/lower()`                                   |                                                              | quote.upper()                                   |
-|      |                      | `replace(바꿀문자, 새문자)`                         |                                                              | filename.replace('SAMSUNG_', 'SSAFY_')          |
-|      |                      | `count(target문자)`                                 |                                                              |                                                 |
-|      |                      | `strip()`                                           |                                                              | .strip()                                        |
-|      |                      | `lstrip()`                                          |                                                              |                                                 |
-|      |                      | `rstrip()`                                          |                                                              |                                                 |
-|      |                      | `split(기준문자)`                                   |                                                              |                                                 |
-|      |                      | `join`                                              |                                                              | ",".join(score_list)                            |
-|      | 리스트 함수          | `append(값) `                                       | 요소 추가하기                                                | empty_list.append(1)                            |
-|      |                      | `extend(리스트)`                                    |                                                              | empty_list.extend([1,2])                        |
-|      |                      | `insert(인덱스, 값)`                                | 특정 인덱스에 요소추가                                       | empty_list.insert(0, 100)                       |
-|      |                      | `index(값)`                                         | 특정값의 인덱스 구하기                                       | a.index(3)                                      |
-|      |                      | ` count(값)`                                        | 특정값의 개수구하기                                          | a.count(2)                                      |
-|      |                      | `reverse()`                                         | 순서 뒤집기                                                  | a.reverse()                                     |
-|      |                      | ` pop(인덱스)`                                      | 리스트 요소삭제                                              | num = empty_list.pop(0)                         |
-|      |                      | ` remove(값)`                                       | 리스트 특정값을 찾아 삭제                                    | empty_list.remove(2)                            |
-|      |                      | `sort(), sort(reverse=False)`                       | 정렬하기(오름차순)                                           | a.sort()                                        |
-|      |                      | `sort(reverse=True)`                                | 정렬하기(내림차순)                                           | a.sort(reverse=True)                            |
-|      | 딕셔너리 기능        | `setdefault(키, 값)`                                | 키-값 쌍 추가하기                                            |                                                 |
-|      |                      | `update({키:값})`                                   | 키-값 수정하기                                               |                                                 |
-|      |                      | ` clear()`                                          | 모든 값 삭제                                                 |                                                 |
-|      |                      | ` pop(키,기본값)`                                   | 키로 딕셔너리 항목삭제                                       |                                                 |
-|      | 딕셔너리 할당과 복사 | `copy()`                                            | 딕셔너리 복사                                                |                                                 |
-|      |                      | `deepcopy()`                                        | 중첩 딕셔너리의 경우                                         |                                                 |
-|      |                      | `map(사용하고자 하는 함수,반복으로 돌리고 싶은 것)` |                                                              |                                                 |
-|      |                      |                                                     |                                                              |                                                 |
-|      |                      |                                                     |                                                              |                                                 |
-|      |                      |                                                     |                                                              |                                                 |
-|      |                      |                                                     |                                                              |                                                 |
-|      |                      |                                                     |                                                              |                                                 |
-|      |                      |                                                     |                                                              |                                                 |
-|      |                      |                                                     |                                                              |                                                 |
-|      |                      |                                                     |                                                              |                                                 |
-|      |                      |                                                     |                                                              |                                                 |
-|      |                      |                                                     |                                                              |                                                 |
-|      |                      |                                                     |                                                              |                                                 |
-|      |                      |                                                     |                                                              |                                                 |
-|      |                      |                                                     |                                                              |                                                 |
-|      |                      |                                                     |                                                              |                                                 |
-|      |                      |                                                     |                                                              |                                                 |
-|      |                      |                                                     |                                                              |                                                 |
-|      |                      |                                                     |                                                              |                                                 |
-|      |                      |                                                     |                                                              |                                                 |
-|      |                      |                                                     |                                                              |                                                 |
-|      |                      |                                                     |                                                              |                                                 |
-|      |                      |                                                     |                                                              |                                                 |
-|      |                      |                                                     |                                                              |                                                 |
-|      |                      |                                                     |                                                              |                                                 |
-|      |                      |                                                     |                                                              |                                                 |
+|      | 함수/모듈명          | 함수/모듈2명                                        | description                                                  | example                                                      |
+| ---- | -------------------- | --------------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+|      | 연산자               | +                                                   | 더하기                                                       |                                                              |
+|      |                      | -                                                   | 빼기                                                         |                                                              |
+|      |                      | *                                                   | 곱하기                                                       |                                                              |
+|      |                      | **2                                                 | 제곱                                                         |                                                              |
+|      |                      | /                                                   | 나눗셈                                                       |                                                              |
+|      |                      | **                                                  | 거듭제곱                                                     |                                                              |
+|      |                      | %                                                   | 모듈러, 나머지를 구한다. a =10 b = 3 인 경우 a%b는 1         |                                                              |
+|      | 논리                 | x and y                                             | True if both the operands are true                           |                                                              |
+|      |                      | x or y                                              | True if either of the operands is true                       |                                                              |
+|      |                      | not x                                               | True if operand is false (complements the operand)           |                                                              |
+|      |                      | x > y                                               | Greater that - True if left operand is greater than the right |                                                              |
+|      |                      | x < y                                               | Less that - True if left operand is less than the right      |                                                              |
+|      |                      | x == y                                              | Equal to - True if both operands are equal                   |                                                              |
+|      |                      | x != y                                              | **Not equal to** - True if operands are not equal            |                                                              |
+|      |                      | x >= y                                              | Greater than or equal to - True if left operand is greater than or equal to the right |                                                              |
+|      |                      | x <= y                                              | Less than or equal to - True if left operand is less than or equal to the right |                                                              |
+|      | 자료형               | `int`                                               | 정수                                                         |                                                              |
+|      |                      | `float`                                             | 실수                                                         |                                                              |
+|      |                      | `bool`                                              | True/False                                                   |                                                              |
+|      |                      | `str`                                               | string                                                       |                                                              |
+|      |                      | `list`                                              | list                                                         |                                                              |
+|      |                      | `tuple`                                             | tuple                                                        |                                                              |
+|      |                      | `set`                                               | set                                                          |                                                              |
+|      |                      | `dict`                                              | dictionary                                                   |                                                              |
+|      | 문자열 함수          | `len(값)`                                           |                                                              | quote = "my best careet partner"<br/>len(quote)              |
+|      |                      | `index(찾을 문자)`                                  |                                                              |                                                              |
+|      |                      | `upper()/lower()`                                   |                                                              | quote.upper()                                                |
+|      |                      | `replace(바꿀문자, 새문자)`                         |                                                              | filename.replace('SAMSUNG_', 'SSAFY_')                       |
+|      |                      | `count(target문자)`                                 |                                                              |                                                              |
+|      |                      | `strip()`                                           |                                                              | .strip()                                                     |
+|      |                      | `lstrip()`                                          |                                                              |                                                              |
+|      |                      | `rstrip()`                                          |                                                              |                                                              |
+|      |                      | `split(기준문자)`                                   |                                                              |                                                              |
+|      |                      | `join`                                              |                                                              | ",".join(score_list)                                         |
+|      | 리스트 함수          | `append(값) `                                       | 요소 추가하기                                                | empty_list.append(1)                                         |
+|      |                      | `extend(리스트)`                                    |                                                              | empty_list.extend([1,2])                                     |
+|      |                      | `insert(인덱스, 값)`                                | 특정 인덱스에 요소추가                                       | empty_list.insert(0, 100)                                    |
+|      |                      | `index(값)`                                         | 특정값의 인덱스 구하기                                       | a.index(3)                                                   |
+|      |                      | ` count(값)`                                        | 특정값의 개수구하기                                          | a.count(2)                                                   |
+|      |                      | `reverse()`                                         | 순서 뒤집기                                                  | a.reverse()                                                  |
+|      |                      | ` pop(인덱스)`                                      | 리스트 요소삭제                                              | num = empty_list.pop(0)                                      |
+|      |                      | ` remove(값)`                                       | 리스트 특정값을 찾아 삭제                                    | empty_list.remove(2)                                         |
+|      |                      | `sort(), sort(reverse=False)`                       | 정렬하기(오름차순)                                           | a.sort()                                                     |
+|      |                      | `sort(reverse=True)`                                | 정렬하기(내림차순)                                           | a.sort(reverse=True)                                         |
+|      |                      |                                                     | 중복값제거                                                   | 1. python의 자료형 중 set 을 이용한 방법   set으로 변환 후 다시 list화 -> set은 1) 중복허용x 2) 순서가 존재x |
+|      | 딕셔너리 기능        | `setdefault(키, 값)`                                | 키-값 쌍 추가하기                                            |                                                              |
+|      |                      | `update({키:값})`                                   | 키-값 수정하기                                               |                                                              |
+|      |                      | ` clear()`                                          | 모든 값 삭제                                                 |                                                              |
+|      |                      | ` pop(키,기본값)`                                   | 키로 딕셔너리 항목삭제                                       |                                                              |
+|      | 딕셔너리 할당과 복사 | `copy()`                                            | 딕셔너리 복사                                                |                                                              |
+|      |                      | `deepcopy()`                                        | 중첩 딕셔너리의 경우                                         |                                                              |
+|      |                      | `.items()`                                          | .items()로 key, value 가져오기                               |                                                              |
+|      |                      | `.keys()`                                           | key만 가져오기                                               |                                                              |
+|      |                      | `.values()`                                         | value만 가져오기                                             |                                                              |
+|      |                      |                                                     |                                                              |                                                              |
+|      |                      |                                                     |                                                              |                                                              |
+|      |                      |                                                     |                                                              |                                                              |
+|      |                      |                                                     |                                                              |                                                              |
+|      |                      |                                                     |                                                              |                                                              |
+|      |                      |                                                     |                                                              |                                                              |
+|      |                      |                                                     |                                                              |                                                              |
+|      |                      |                                                     |                                                              |                                                              |
+|      |                      |                                                     |                                                              |                                                              |
+|      |                      |                                                     |                                                              |                                                              |
+|      |                      | `map(사용하고자 하는 함수,반복으로 돌리고 싶은 것)` |                                                              |                                                              |
+|      |                      |                                                     |                                                              |                                                              |
+|      |                      |                                                     |                                                              |                                                              |
+|      |                      | sum([1,3,4])                                        |                                                              | #8                                                           |
+|      |                      | len([1,3,4])                                        |                                                              | #3                                                           |
+|      |                      | max([1,3,4])                                        |                                                              | #4                                                           |
+|      |                      | min([1,3,4])                                        |                                                              | #1                                                           |
+|      |                      |                                                     |                                                              |                                                              |
+|      |                      |                                                     |                                                              |                                                              |
+|      |                      |                                                     |                                                              |                                                              |
+|      |                      |                                                     |                                                              |                                                              |
+|      |                      |                                                     |                                                              |                                                              |
 
 
 
@@ -295,4 +296,64 @@ Link([naver]( 해당주소))
 |      |          |                                                     |                                                              |                                                              |
 |      |          |                                                     |                                                              |                                                              |
 |      |          |                                                     |                                                              |                                                              |
+
+**[이스케이프 코드란?]**
+
+문자열 예제에서 여러 줄의 문장을 처리할 때 백슬래시 문자와 소문자 n을 조합한 `\n` 이스케이프 코드를 사용했다. 이스케이프 코드란 프로그래밍할 때 사용할 수 있도록 미리 정의해 둔 "문자 조합"이다. 주로 출력물을 보기 좋게 정렬하는 용도로 사용한다. 몇 가지 이스케이프 코드를 정리하면 다음과 같다.
+
+| 코드   | 설명                                                    |
+| ------ | ------------------------------------------------------- |
+| `\n`   | 문자열 안에서 줄을 바꿀 때 사용                         |
+| `\t`   | 문자열 사이에 탭 간격을 줄 때 사용                      |
+| `\\`   | 문자 `\`를 그대로 표현할 때 사용                        |
+| `\'`   | 작은따옴표(`'`)를 그대로 표현할 때 사용                 |
+| `\"`   | 큰따옴표(`"`)를 그대로 표현할 때 사용                   |
+| `\r`   | 캐리지 리턴(줄 바꿈 문자, 현재 커서를 가장 앞으로 이동) |
+| `\f`   | 폼 피드(줄 바꿈 문자, 현재 커서를 다음 줄로 이동)       |
+| `\a`   | 벨 소리(출력할 때 PC 스피커에서 '삑' 소리가 난다)       |
+| `\b`   | 백 스페이스                                             |
+| `\000` | 널 문자                                                 |
+
+
+
+**왼쪽 정렬**
+
+```
+>>> "{0:<10}".format("hi")
+'hi        '
+```
+
+`:<10` 표현식을 사용하면 치환되는 문자열을 왼쪽으로 정렬하고 문자열의 총 자릿수를 10으로 맞출 수 있다.
+
+**오른쪽 정렬**
+
+```
+>>> "{0:>10}".format("hi")
+'        hi'
+```
+
+오른쪽 정렬은 `:<` 대신 `:>`을 사용하면 된다. 화살표 방향을 생각하면 어느 쪽으로 정렬되는지 바로 알 수 있을 것이다.
+
+**가운데 정렬**
+
+```
+>>> "{0:^10}".format("hi")
+'    hi    '
+```
+
+`:^` 기호를 사용하면 가운데 정렬도 가능하다.
+
+
+
+
+
+
+
+
+
+
+
+OOP 공부!!!!
+
+dictionary 공부!!!!!
 

@@ -136,6 +136,18 @@ http://artii.herokuapp.com/make
 
 
 
+요청한 텍스트가 아닌 정보를 받아서 
+
+보여주기 위한 것
+
+딕셔너리에 담아서 보여주기
+
+
+
+
+
+
+
 ##### #### ** 반드시 외워야 하는 개념(사용자 input을 받아서 처리하는 기능)
 
 ##### survey
@@ -186,16 +198,48 @@ http://artii.herokuapp.com/make
 
 ##### font
 
-사용자-아스키아트-text
-
-서버-아스키아트-fonts_list
-
-조합->make->서버-아스키아트
-
-서버-아스키아트-사용자
+사용자-아스키아트-text-서버-아스키아트-조합->make->서버-사용자
 
 1. 사용자에게 text 입력받음
 2. text를 api에 요청을 보냄
-3. 랜덤 font로 뽑은 font로 조합해서 
-4. 사용자에게 보여주기
+3. 요청 받은 것을 text화 하여 사용자에게 전달하기 위해 생성한 다른 페이지에 해당 text를 출력
+
+
+
+1. 랜덤 font로 뽑은 font로 조합해서 
+2. 사용자에게 보여주기
+
+
+
+##### lotto
+
+1. input 페이지
+
+1-1. 회차 
+
+1-2. 사용자가 선택할 번호
+
+2. 실제 당첨 번호와 비교하여 실제 사용자에게 전달 페이지
+
+
+
+https://dhlottery.co.kr/common.do?method=main
+
+network -> all
+
+1. https://dhlottery.co.kr/common.do?method=getLottoNumber
+
+![1562833282924](C:\Users\student\AppData\Roaming\Typora\typora-user-images\1562833282924.png)
+
+2. https://dhlottery.co.kr/common.do?method=getLottoNumber&drwNo=865
+
+   Chrome Json Viewer로 확인!
+
+![1562833355795](C:\Users\student\AppData\Roaming\Typora\typora-user-images\1562833355795.png)
+
+json
+
+
+
+## 챗봇
 

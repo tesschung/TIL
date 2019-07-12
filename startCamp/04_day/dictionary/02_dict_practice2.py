@@ -24,9 +24,6 @@ for value in score.values():
 
 print(total_score/len(score.keys()))
 
-
-
-
 total_score_sum = sum(score.values())
 print(total_score/len(score))
 
@@ -96,12 +93,11 @@ for name, temp in city.items():
     # 첫 번째 시행 때
     # 단 한번만 실행되는 조건이 필요해서 count 변수 사용
     if count == 0:
-        hot_temp = max(temp)
-        print(hot_temp)
-        cold_temp = min(temp)
-        print(cold_temp)
+        hot_temp = max(temp) # count가 0일때/첫번째 키인 서울 5
+        cold_temp = min(temp) # count가 0일때/첫번째 키인 서울 -10
         hot_city = name
         cold_city = name
+        # 서울을 한 번 돌고, 그 다음 키로 돈다 -> count는 더이상 0이 아니므로
     else:
         # 최저 온도가 cold_temp 보다 낮으면, cold_temp 에 값을 새로 넣고,
         if min(temp) < cold_temp:
