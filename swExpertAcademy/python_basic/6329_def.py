@@ -46,6 +46,4 @@ def countdown(num):
 
 countdown(0)
 countdown(10)
-        
-
 

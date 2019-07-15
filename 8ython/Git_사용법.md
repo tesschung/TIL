@@ -253,3 +253,15 @@ commit내용을 origin에 push
 ![1562646899204](C:\Users\student\AppData\Roaming\Typora\typora-user-images\1562646899204.png)
 
 git pull origin master
+
+
+
+
+
+
+
+##### Clone
+
+* git clone url
+
+  ![1563162214340](C:\Users\student\AppData\Roaming\Typora\typora-user-images\1563162214340.png)
