@@ -11,13 +11,32 @@
 
 '''
 
+그리면서
+
 def kill_max_flies(n, m):
     board = []
     temp_board = []
-    
-    for ni in n:
-        board.append(m.split())
+    index_num = []
+    a = (n-1)*(n-1)
+    x = 0
 
-    if ni_i in (n-1)*(n-1):
-        temp_for_max = sum(board[ni][ni:ni+2]) + sum(board[ni][ni:ni+2])
+    
+    for ni in range(n):
+        index_num.append(ni)        
+        board.append(input().split())
+    # print(board)
+    # print(index_num)
+    # print(board[0][0:2])
+        if x < n:
+            for ni_i in range(n-2):
+                print('f', board[x][x:x+2])
+                temp_max = sum(map(int, board[x][x:x+2])) + sum(map(int, board[x+1][x:x+2]))
+                temp_board.append(temp_max)
+                x = x + 1        
+            print('total_sum', temp_board)
+            
         
+            
+            
+
+kill_max_flies(5, 2)

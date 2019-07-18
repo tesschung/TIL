@@ -5,9 +5,3 @@ https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5
 
 '''
 
-def my(a,b):
-    c = a + b
-    print(c)
-
-r = my(4,7)
-print(r)
