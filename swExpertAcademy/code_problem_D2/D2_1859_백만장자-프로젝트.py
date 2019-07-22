@@ -48,7 +48,7 @@
 '''
 
 lista.index(max(lista))
-max값인 index
+max값인 indexcd
 
 # test input = 
 
